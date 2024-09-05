@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech.Care</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="body-emphasized-14pt">
+    <div class="container">
+      <!-- header section -->
+      <header>
+        <nav>
+          <div>
+            <img src="Assets/TestLogo.svg" alt="" />
+          </div>
+          <div>
+            <ul>
+              <li>
+                <img src="Assets/home_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+                <a href="#" class="body-emphasized-14pt">Overview</a>
+              </li>
+              <li class="navbar-active">
+                <img src="Assets/group_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+                <a href="#" class="body-emphasized-14pt">Patients</a>
+              </li>
+              <li>
+                <img
+                  src="Assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <a href="#" class="body-emphasized-14pt">Schedule</a>
+              </li>
+              <li>
+                <img
+                  src="Assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <a href="#" class="body-emphasized-14pt">Message</a>
+              </li>
+              <li>
+                <img
+                  src="Assets/credit_card_FILL0_wght300_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <a href="#" class="body-emphasized-14pt">Transactions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-text-group">
+            <img
+              src="Assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+              alt=""
+            />
+            <div class="nav-text-titles">
+              <span class="body-emphasized-14pt">Dr. Jose Simmons</span>
+              <span class="body-secondary-info-14pt">General Practitioner</span>
+            </div>
+            <div class="nav-line"></div>
+            <img src="Assets/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+            <img src="Assets/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+          </div>
+        </nav>
+      </header>
+
+      <!-- hero section -->
+      <div class="hero-section">
+        <!-- sidebar section -->
+        <aside>
+          <div class="aside-nav">
+            <h3 class="card-title-24pt">Patients</h3>
+            <img src="Assets/search_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+          </div>
+
+          <div class="list-of-patients">
+            <ul id="list-item-uls">
+              <!-- <li class="list-item">
+                <div class="Patient-name-group">
+                  <img src="Assets/Layer 8.png" alt="" />
+                  <div class="name-age">
+                    <span class="body-emphasized-14pt">Emily Williams</span>
+                    <span class="body-secondary-info-14pt">Female, 18</span>
+                  </div>
+                </div>
+                <div class="horiz-dots">
+                  <img
+                    src="Assets/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </aside>
+
+        <!-- mid section -->
+        <div class="mid-content">
+          <div class="diagnosis-history">
+            <h3 class="card-title-24pt">Diagnisis History</h3>
+            <div class="blood-pressure-card">
+              <div class="blood-pressure-card-left">
+                <div class="blood-pressure-content">
+                  <span class="inner-card-title-18pt">Blood Pressure</span>
+                  <div class="six-months">
+                    <span class="body-regular-14">Last 6 Months</span>
+                    <span>
+                      <img
+                        src="Assets/expand_more_FILL0_wght300_GRAD0_opsz24.svg"
+                        alt=""
+                    /></span>
+                  </div>
+                </div>
+                <div class="chart">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+              <div class="blood-pressure-card-right">
+                <div class="systolic">
+                  <div class="systolic-title">
+                    <div class="dot"></div>
+                    <div>Systolic</div>
+                  </div>
+                  <span class="value" id="blood-pressure-systolic-value"></span>
+                  <div class="level body-regular-14" id="systolic-level-div">
+                    <!-- <span> <img src="" alt="" id="systolic-arrow" /> </span>
+                    <span id="blood-pressure-systolic-level"></span> -->
+                  </div>
+                </div>
+                <hr />
+                <div class="diastolic">
+                  <div class="diastolic-title">
+                    <div class="dot"></div>
+                    <div>Diastolic</div>
+                  </div>
+                  <span
+                    class="value"
+                    id="blood-pressure-diastolic-value"
+                  ></span>
+                  <div
+                    class="level body-regular-14"
+                    id="diastolic-level-div"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="boxes">
+              <div class="box1 box">
+                <div class="box-content">
+                  <img src="Assets/respiratory rate.svg" alt="" />
+                  <div class="box-content-text-group">
+                    <span class="title">Respiratory Rate</span>
+                    <span class="value" id="respiratory-value"></span>
+                  </div>
+                  <div class="body-regular-14 level" id="respiratory-level-div">
+                    <!-- <span id="respiratory-level"></span> -->
+                  </div>
+                </div>
+              </div>
+              <div class="box2 box">
+                <div class="box-content">
+                  <img src="Assets/temperature.svg" alt="" />
+                  <div class="box-content-text-group">
+                    <span class="title">Temperature</span>
+                    <span class="value" id="temperature-value"></span>
+                  </div>
+                  <div class="body-regular-14 level" id="temperature-level-div">
+                    <!-- <span id="temperature-level"></span> -->
+                  </div>
+                </div>
+              </div>
+              <div class="box3 box">
+                <div class="box-content">
+                  <img src="Assets/HeartBPM.svg" alt="" />
+                  <div class="box-content-text-group">
+                    <span class="title">Heart Rate</span>
+                    <span class="value" id="heart-rate-value"></span>
+                  </div>
+                  <div class="body-regular-14 level" id="heart-rate-level-div">
+                    <!-- <span id="heart-rate-level"></span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="diagnostic-list">
+            <div class="diagnostic-list-content">
+              <h3 class="card-title-24pt">Diagnostic List</h3>
+              <div class="list-section-nav">
+                <p class="text-column problems">Problem/Diagnosis</p>
+                <p class="text-column description">Description</p>
+                <p class="text-column status">status</p>
+              </div>
+              <ul class="diagnostic-list-uls">
+                <!-- <li class="diagnostic-list-item">
+                <span class="text-column problems">Hypertension</span>
+                <span class="text-column description"
+                  >Chronic high blood pressure</span
+                >
+                <span class="text-column status">Under Observation</span>
+              </li>
+              <hr /> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="end-section">
+          <div class="patient-info-card">
+            <div class="patient-info-header">
+              <img src="" alt="" class="patient-info-picture" />
+              <h2 class="card-title-24pt" id="patient-info-title"></h2>
+            </div>
+            <div class="patient-info-content">
+              <div class="date-of-birth info">
+                <img src="Assets/BirthIcon.svg" alt="" />
+                <div class="text-group">
+                  <span class="title">Date Of Birth</span>
+                  <span class="description" id="date-of-birth"></span>
+                </div>
+              </div>
+              <div class="gender info">
+                <img src="Assets/FemaleIcon.svg" alt="" id="gender-logo" />
+                <div class="text-group">
+                  <span class="title">Gender</span>
+                  <span class="description" id="gender"></span>
+                </div>
+              </div>
+              <div class="contact info">
+                <img src="Assets/PhoneIcon.svg" alt="" />
+                <div class="text-group">
+                  <span class="title">Contact Info.</span>
+                  <span class="description" id="contact-info"></span>
+                </div>
+              </div>
+              <div class="emergency-contact info">
+                <img src="Assets/PhoneIcon.svg" alt="" />
+                <div class="text-group">
+                  <span class="title">Emergency Contacts</span>
+                  <span class="description" id="emergency-contact-info"></span>
+                </div>
+              </div>
+              <div class="insurance info">
+                <img src="Assets/InsuranceIcon.svg" alt="" />
+                <div class="text-group">
+                  <span class="title">Insurance Provider</span>
+                  <span class="description" id="insurance-provider"></span>
+                </div>
+              </div>
+            </div>
+            <div class="button-div">
+              <button class="patient-card-button">Show All Information</button>
+            </div>
+          </div>
+          <div class="lab-results">
+            <h3 class="card-title-24pt">Lab Results</h3>
+            <ul class="lab-results-uls"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
