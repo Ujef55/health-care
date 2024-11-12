@@ -30,9 +30,9 @@ const diastolicLevelDiv = document.getElementById('diastolic-level-div');
 
 
 (function () {
-    const apiUrl = 'https://fedskillstest.coalitiontechnologies.workers.dev/';
-    const username = 'coalition';
-    const password = 'skills-test';
+    const apiUrl = config.API_URL;
+    const username = config.USERNAME;
+    const password = config.PASSWORD;
 
     const credentials = btoa(`${username}:${password}`);
 
